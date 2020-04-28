@@ -442,7 +442,7 @@ case $FW in
 				     -o \( \( $IPTVER2 -eq 4 \) -a \( $IPTVER3 -ge 3 \) \) \) ] ; then
 					echo "CPPFLAGS += -DIPTABLES_143" >> config.mk
 				fi
-				echo "CFLAGS += `${PKG_CONFIG} --cflags libiptc)`" >> config.mk
+				echo "CFLAGS += `${PKG_CONFIG} --cflags libiptc`" >> config.mk
 				echo "LDLIBS += `${PKG_CONFIG} --static --libs-only-l libiptc`" >> config.mk
 				echo "LDFLAGS += `${PKG_CONFIG} --libs-only-L --libs-only-other libiptc`" >> config.mk
 			fi
